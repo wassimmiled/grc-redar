@@ -63,12 +63,3 @@ interface `ControlMatch[]`, donc sans impact sur le frontend ni les tests.
   front, Frontend Agent ne touche pas à l'API) pour permettre le travail
   parallèle sans conflit.
 
-## Aller plus loin (cible production, hors périmètre démo)
-- Backend AdonisJS + Kysely + PostgreSQL au lieu du stockage en mémoire.
-- Serveur MCP `compliance-kb` exposant le référentiel complet ISO 27001/NIS2
-  aux agents (au lieu du tableau statique dans `controls.ts`).
-- Authentification Better Auth / Keycloak + RBAC.
-- Appel réel à l'API Claude avec prompt few-shot pour l'extraction.
-
-Voir `docs/adr/0001-architecture.md` pour le détail des choix et `PLAN.md`
-pour le découpage en tâches tel qu'exécuté avec des agents en parallèle.
